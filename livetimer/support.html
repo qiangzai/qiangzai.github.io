@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LiveTimer 技术支持 / Support</title>
+<meta name="description" content="LiveTimer 技术支持、常见问题与联系方式。">
+<style>
+  :root {
+    color-scheme: light dark;
+    --background: #f6f7f9;
+    --surface: #ffffff;
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --line: #dedee3;
+    --accent: #e65f00;
+    --accent-soft: #fff1e7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    color: var(--text);
+    background: var(--background);
+    font: 16px/1.72 -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+  }
+  header, main, footer { width: min(760px, calc(100% - 32px)); margin: 0 auto; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 24px 0; }
+  .brand { color: var(--text); font-size: 18px; font-weight: 700; text-decoration: none; }
+  nav { display: flex; gap: 16px; font-size: 14px; }
+  nav a { color: var(--muted); }
+  nav a[aria-current="page"] { color: var(--accent); font-weight: 600; }
+  main { padding: 40px clamp(20px, 5vw, 56px) 56px; background: var(--surface); border: 1px solid var(--line); border-radius: 22px; box-shadow: 0 18px 50px #0000000a; }
+  h1 { margin: 0; font-size: clamp(32px, 7vw, 48px); line-height: 1.12; letter-spacing: -0.03em; }
+  h2 { margin: 44px 0 14px; font-size: 22px; }
+  h3 { margin: 0 0 6px; font-size: 17px; }
+  p { margin: 8px 0; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  .lead { margin-top: 14px; color: var(--muted); font-size: 18px; }
+  .contact { margin: 28px 0 8px; padding: 20px; background: var(--accent-soft); border-radius: 14px; }
+  .contact strong { display: block; margin-bottom: 4px; }
+  .faq { display: grid; gap: 14px; }
+  .faq article { padding: 18px 20px; border: 1px solid var(--line); border-radius: 14px; }
+  .hint { color: var(--muted); font-size: 14px; }
+  footer { padding: 24px 0 40px; color: var(--muted); font-size: 13px; text-align: center; }
+  @media (prefers-color-scheme: dark) {
+    :root { --background: #0d0d0f; --surface: #18181b; --text: #f5f5f7; --muted: #a1a1a6; --line: #343439; --accent: #ff8a34; --accent-soft: #2a1b12; }
+    main { box-shadow: none; }
+  }
+  @media (max-width: 520px) {
+    header { align-items: flex-start; flex-direction: column; }
+    main { border-radius: 16px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <a class="brand" href="support.html">LiveTimer</a>
+  <nav aria-label="页面导航">
+    <a href="support.html" aria-current="page">技术支持</a>
+    <a href="privacy-policy.html">隐私政策</a>
+  </nav>
+</header>
+<main>
+  <h1>技术支持<br><span lang="en">Support</span></h1>
+  <p class="lead">感谢使用 LiveTimer。如果遇到问题，可以先查看下方说明或直接通过电子邮件联系我们。</p>
+
+  <div class="contact">
+    <strong>联系邮箱</strong>
+    <a href="mailto:gurui@moonrabbit.com.cn?subject=LiveTimer%20Support">gurui@moonrabbit.com.cn</a>
+    <p class="hint">来信建议附上设备型号、iOS 版本、App 版本、问题复现步骤；请勿发送密码或支付信息。</p>
+  </div>
+
+  <h2>常见问题</h2>
+  <div class="faq">
+    <article>
+      <h3>收不到抢购提醒</h3>
+      <p>打开 LiveTimer「设置」查看通知权限。若显示已关闭，请前往 iOS「设置 &gt; 通知 &gt; LiveTimer」允许通知，并确认任务时间仍在未来。</p>
+    </article>
+    <article>
+      <h3>灵动岛或锁屏没有显示计时</h3>
+      <p>在计时页点击「开启实时活动」，然后返回主屏幕或锁屏查看。只有支持灵动岛的机型会在灵动岛显示，其他受支持的 iPhone 可在锁屏查看。</p>
+    </article>
+    <article>
+      <h3>时间校准失败</h3>
+      <p>请确认设备已联网后重试。部分网络可能限制 NTP 连接，LiveTimer 会继续尝试 HTTPS 时间响应；必要时可切换 Wi-Fi 或蜂窝网络。</p>
+    </article>
+  </div>
+
+  <section lang="en">
+    <h2>English Support</h2>
+    <p>For help with LiveTimer, email <a href="mailto:gurui@moonrabbit.com.cn?subject=LiveTimer%20Support">gurui@moonrabbit.com.cn</a>.</p>
+    <p>Please include your device model, iOS version, App version, and steps to reproduce the issue. Do not send passwords or payment information.</p>
+    <p class="hint">Notifications are scheduled locally on your device. Live Activities appear after you tap “Start Live Activity.” Time calibration requires a network connection and may retry over HTTPS if NTP is unavailable.</p>
+  </section>
+</main>
+<footer>© 2026 LiveTimer · <a href="privacy-policy.html">隐私政策 / Privacy Policy</a></footer>
+</body>
+</html>
